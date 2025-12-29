@@ -169,7 +169,7 @@ function runCommand() {
         if (command === 'list') {
             window.location.href = '/library.html';
         } else {
-            document.getElementById('commandResult').textContent = formatCommandOutput(data.output || JSON.stringify(data, null, 2));
+            document.getElementById('commandResult').textContent = formatCommandOutput(data.output || data.error || JSON.stringify(data, null, 2));
         }
 
         if (command === 'config') {
@@ -218,5 +218,4 @@ function editConfig() {
         document.getElementById('configResult').textContent = 'Error saving config: ' + error.message;
     });
 }
-
 
