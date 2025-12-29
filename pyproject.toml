@@ -10,7 +10,7 @@ dependencies = [
     "certifi==2024.8.30",
     "charset-normalizer==3.3.2",
     "click==8.1.7",
-    "flask==3.0.3",
+    "flask>3.0.0",
     "idna==3.9",
     "importlib-metadata==8.5.0",
     "itsdangerous==2.2.0",
@@ -34,4 +34,3 @@ build-backend = "flit_core.buildapi"
 "Homepage" = "http://github.com/Vansmak/beetiful"
 "Bug Reports" = "https://github.com/Vansmak/beetiful/issues"
 "Source" = "https://github.com/Vansmak/beetiful"
-
